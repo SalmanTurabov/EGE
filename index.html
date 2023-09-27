@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>EGE</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__left">
+                    <div class="navbar__logo">
+                        <svg width="61" height="40" viewBox="0 0 61 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2412_109)">
+                                <path
+                                    d="M23.8532 10.126V14.6163H20.081V11.9918L12.2396 5.51478L4.77063 11.6838V36.7927H20.9691V40H0V10.126L12.2594 0L23.8532 10.126Z"
+                                    fill="#F0BA4E" />
+                                <path d="M23.8532 15.8076H7.354V20.0001H23.8532V15.8076Z" fill="#C9CFCC" />
+                                <path d="M7.354 23.1387H23.8532V27.5373H11.9266V30.1948H23.8532V34.4101H7.354V23.1387Z"
+                                    fill="#C9CFCC" />
+                                <path d="M61 15.8076H44.5007V20.0001H61V15.8076Z" fill="#C9CFCC" />
+                                <path d="M44.5007 23.1387H61V27.5373H49.0734V30.1948H61V34.4101H44.5007V23.1387Z"
+                                    fill="#C9CFCC" />
+                                <path
+                                    d="M43.5579 25.0172C43.5581 27.1259 42.8138 29.1708 41.4494 30.8103C40.085 32.4498 38.1832 33.5846 36.0615 34.0252C33.9399 34.4657 31.727 34.1854 29.7924 33.2309C27.8579 32.2765 26.3189 30.7057 25.4325 28.781C24.5461 26.8564 24.366 24.6944 24.9223 22.6562C25.4786 20.618 26.7376 18.8271 28.489 17.5825C30.2404 16.338 32.3781 15.7153 34.545 15.8184C36.7119 15.9215 38.7768 16.7441 40.3948 18.149L36.7932 21.6495C35.9874 21.1228 35.0375 20.8429 34.0663 20.8461C33.0952 20.8494 32.1473 21.1356 31.3452 21.6677C30.5431 22.1999 29.9235 22.9535 29.5665 23.8314C29.2096 24.7092 29.1316 25.671 29.3427 26.5923C29.5537 27.5137 30.0442 28.3524 30.7507 29.0001C31.4571 29.6478 32.3472 30.0748 33.3058 30.2258C34.2645 30.3769 35.2477 30.2451 36.1285 29.8475C37.0093 29.45 37.7473 28.8048 38.247 27.9955H32.4327V24.4216H43.5381C43.5513 24.6189 43.5579 24.8175 43.5579 25.0172Z"
+                                    fill="#C9CFCC" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2412_109">
+                                    <rect width="61" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="navbar__info">
+                        <ul class="left">
+                            <li><a class="navbar__menu" href="#">Главная</a></li>
+                            <li><a class="navbar__menu" href="#">О компании</a></li>
+                            <li><a class="navbar__menu" href="#">Каталог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar__right">
+                    <div class="navbar__phone">
+                        <a class="navbar__right-phone" href="tel:+79650842929">
+                            <img class="logo__phone" src="img/icons/Phone.png" alt="phone">
+                            <div class="phone">
+                                +7 (965) 084-29-29
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="like" src="img/icons/like.png" alt="like">
+                        </a>
+                    </div>
+                    <div class="navbar__basket">
+                        <a class="logo-basket" href="#">
+                            <img src="img/icons/Mask group.png" alt="basket">
+                        </a>
+                        <a class="empty" href="#">Пусто</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <div class="menu__catalog">
+                    <div class="menu__burger">
+                        <img src="img/icons/menu.png" alt="menu">
+                    </div>
+                    <div class="menu__nav">
+                        <div class="menu__list catalog">
+                            Каталог
+                        </div>
+                        <div class="menu__list Constructionmaterials">
+                            Стройматериалы
+                        </div>
+                        <div class="menu__list tool">
+                            Инструменты
+                        </div>
+                        <div class="menu__list electrics">
+                            Электрика
+                        </div>
+                        <div class="menu__list interior">
+                            Интерьер и одежда
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__search">
+                    <form class="search" action="#">
+                        <input class="search_form" type="search" name="search"
+                            placeholder="Поиск, например Круг зачистной">
+                        <a href="#" class="search_logo">
+                            <img class="search_foto" src="img/icons/search.png" alt="search">
+                        </a>
+                    </form>
+                    <div class="locaition-moscow">
+                        <a href="#" class="locaition_top">
+                            <img class="locaition_top__logo" src="img/icons/map-pin (2) 1.png" alt="locaition">
+                        </a>
+                        <a href="#" class="moscow">Москва</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="baner__img">
+            <img class="img" src="img/banner.jpg" alt="banner">
+        </div>
+        <div class="banner__vector">
+            <img class="vector" src="img/Vector 1.png" alt="">
+        </div>
+        <div class="banner__text">
+            Инструмент для вашего<br>бизнеса
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__items">
+                <div class="about__item">
+                    <div class="about__logo">
+                        <img class="about__img" src="img/icons/about/about1.png" alt="about">
+                    </div>
+                    <div class="about__text">
+                        <span>Большой ассортимент</span><br>
+                        строительных материалов всегда в<br> наличии
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__logo">
+                        <img class="about__img" src="img/icons/about/about2.png" alt="about">
+                    </div>
+                    <div class="about__text">
+                        <span>Доставка стройматериалов</span><br>
+                        в течении четырех часов или в<br> любое удобное время
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__logo">
+                        <img class="about__img" src="img/icons/about/about3.png" alt="about">
+                    </div>
+                    <div class="about__text">
+                        Многоуровневая <span>система<br> управления качеством</span> по стандарту<br> ISO 9001
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="assortment">
+        <div class="container">
+            <div class="assortment__pages">
+                <div class="assortment__number active__number">1</div>
+                <div class="assortment__number">2</div>
+                <div class="assortment__number">3</div>
+                <div class="assortment__number">4</div>
+                <div class="assortment__number">5</div>
+            </div>
+            <div class="assortment__items">
+                <div class="assortment__item big__item">
+                    <div class="assortment__title big__item-title">
+                        Строительный отделочный<br> инструмент
+                    </div>
+                    <div class="assortment__img">
+                        <img src="img/assortment1.jpg" alt="">
+                    </div>
+                    <div class="gotocatalog gotocatalog__big">
+                        <div class="gotocatalog__text">
+                            Перейти в каталог
+                        </div>
+                        <div class="gotocatalog__img">
+                            <img src="img/icons/assortment/assortment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__item enamels__item">
+                    <div class="assortment__title enamels ">
+                        Эмали
+                    </div>
+                    <div class="assortment__img">
+                        <img class="enamels__img" src="img/assortment2.jpg" alt="эмали">
+                    </div>
+                    <div class="gotocatalog gotocatalog__enamels">
+                        <div class="gotocatalog__text">
+                            Перейти в каталог
+                        </div>
+                        <div class="gotocatalog__img">
+                            <img src="img/icons/assortment/assortment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__item paints__item">
+                    <div class="assortment__title">
+                        Лакокрасочные<br> материалы
+                    </div>
+                    <div class="assortment__img">
+                        <img class="paints__img" src="img/assortment3.jpg" alt="">
+                    </div>
+                    <div class="gotocatalog gotocatalog__paints">
+                        <div class="gotocatalog__text">
+                            Перейти в каталог
+                        </div>
+                        <div class="gotocatalog__img">
+                            <img src="img/icons/assortment/assortment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__item foam__item">
+                    <div class="assortment__title">
+                        Пены, клеи и<br> герметики
+                    </div>
+                    <div class="assortment__img">
+                        <img class="foam__img" src="img/assortment4.jpg" alt="Пены, клеи и герметики">
+                    </div>
+                    <div class="gotocatalog gotocatalog__foam">
+                        <div class="gotocatalog__text">
+                            Перейти в каталог
+                        </div>
+                        <div class="gotocatalog__img">
+                            <img src="img/icons/assortment/assortment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="assortment__item sockets__item">
+                    <div class="assortment__title">
+                        Розетки и выключатели
+                    </div>
+                    <div class="assortment__img">
+                        <img class="sockets__img" src="img/assortment5.jpg" alt="">
+                    </div>
+                    <div class="gotocatalog gotocatalog__sockets">
+                        <div class="gotocatalog__text">
+                            Перейти в каталог
+                        </div>
+                        <div class="gotocatalog__img">
+                            <img src="img/icons/assortment/assortment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <div class="popular__top">
+                <div class="popular__title">
+                    Популярные товары
+                </div>
+                <div class="popular__all-products">
+                    Посмотреть все товары
+                </div>
+            </div>
+            <div class="popular__items">
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="popular__percent">
+                                <img src="img/popular/percent.png" alt="">
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            <span>52 руб.</span>48 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="popular__percent">
+                                <img src="img/popular/percent.png" alt="">
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            <span>52 руб.</span>48 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="popular__percent">
+                                <img src="img/popular/percent.png" alt="">
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            <span>52 руб.</span>48 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="new__grin">
+                                Новинка
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            52 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools">
+        <div class="container">
+            <div class="tools__wrapper">
+                <div class="tools__text">
+                    <div class="tools__title">
+                        Более 10 000 наименований
+                    </div>
+                    <div class="tools__subtitle">
+                        Инструмент для вашего бизнеса, разнообразных марок
+                    </div>
+                    <div class="tools__catalog">
+                        Перейти в каталог
+                    </div>
+                </div>
+                <div class="tools__img">
+                    <img src="img/tools/tools.png" alt="tools">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="new">
+        <div class="container">
+            <div class="popular__top">
+                <div class="popular__title">
+                    Новинки
+                </div>
+                <div class="popular__all-products">
+                    Посмотреть все товары
+                </div>
+            </div>
+            <div class="popular__items">
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="new__grin">
+                                Новинка
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            52 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="new__grin">
+                                Новинка
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            52 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="new__grin">
+                                Новинка
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            52 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__item">
+                    <div class="popular__main">
+                        <div class="popular__item-top">
+                            <div class="new__grin">
+                                Новинка
+                            </div>
+                            <div class="popular__heart">
+                                <svg width="24" height="39" viewBox="0 0 24 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8401 12.1099C20.3294 11.5989 19.7229 11.1935 19.0555 10.917C18.388 10.6404 17.6726 10.498 16.9501 10.498C16.2276 10.498 15.5122 10.6404 14.8448 10.917C14.1773 11.1935 13.5709 11.5989 13.0601 12.1099L12.0001 13.1699L10.9401 12.1099C9.90843 11.0782 8.50915 10.4986 7.05012 10.4986C5.59109 10.4986 4.19181 11.0782 3.16012 12.1099C2.12843 13.1416 1.54883 14.5408 1.54883 15.9999C1.54883 17.4589 2.12843 18.8582 3.16012 19.8899L4.22012 20.9499L12.0001 28.7299L19.7801 20.9499L20.8401 19.8899C21.3511 19.3791 21.7565 18.7727 22.033 18.1052C22.3096 17.4378 22.4519 16.7224 22.4519 15.9999C22.4519 15.2774 22.3096 14.562 22.033 13.8945C21.7565 13.2271 21.3511 12.6206 20.8401 12.1099V12.1099Z"
+                                        stroke="#3C3C3B" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="popular__circle">
+                            <img class="circle__img" src="img/popular/circle.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular__info">
+                        <div class="popular__item-title">
+                            Круг зачистной 125х6х22
+                        </div>
+                        <div class="popular__item-code">
+                            Артикул 00004
+                        </div>
+                        <div class="popular__price-text">
+                            Цена за штуку
+                        </div>
+                        <div class="popular__price">
+                            52 руб.
+                        </div>
+                    </div>
+                    <div class="popular__bottom">
+                        <div class="popular__count">
+                            <div class="count__text">
+                                Количество
+                            </div>
+                            <div class="count__number">
+                                -<span>1</span>+
+                            </div>
+                        </div>
+                        <div class="popular__basket">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        <svg width="61" height="40" viewBox="0 0 61 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2412_109)">
+                                <path
+                                    d="M23.8532 10.126V14.6163H20.081V11.9918L12.2396 5.51478L4.77063 11.6838V36.7927H20.9691V40H0V10.126L12.2594 0L23.8532 10.126Z"
+                                    fill="#F0BA4E" />
+                                <path d="M23.8532 15.8076H7.354V20.0001H23.8532V15.8076Z" fill="#C9CFCC" />
+                                <path d="M7.354 23.1387H23.8532V27.5373H11.9266V30.1948H23.8532V34.4101H7.354V23.1387Z"
+                                    fill="#C9CFCC" />
+                                <path d="M61 15.8076H44.5007V20.0001H61V15.8076Z" fill="#C9CFCC" />
+                                <path d="M44.5007 23.1387H61V27.5373H49.0734V30.1948H61V34.4101H44.5007V23.1387Z"
+                                    fill="#C9CFCC" />
+                                <path
+                                    d="M43.5579 25.0172C43.5581 27.1259 42.8138 29.1708 41.4494 30.8103C40.085 32.4498 38.1832 33.5846 36.0615 34.0252C33.9399 34.4657 31.727 34.1854 29.7924 33.2309C27.8579 32.2765 26.3189 30.7057 25.4325 28.781C24.5461 26.8564 24.366 24.6944 24.9223 22.6562C25.4786 20.618 26.7376 18.8271 28.489 17.5825C30.2404 16.338 32.3781 15.7153 34.545 15.8184C36.7119 15.9215 38.7768 16.7441 40.3948 18.149L36.7932 21.6495C35.9874 21.1228 35.0375 20.8429 34.0663 20.8461C33.0952 20.8494 32.1473 21.1356 31.3452 21.6677C30.5431 22.1999 29.9235 22.9535 29.5665 23.8314C29.2096 24.7092 29.1316 25.671 29.3427 26.5923C29.5537 27.5137 30.0442 28.3524 30.7507 29.0001C31.4571 29.6478 32.3472 30.0748 33.3058 30.2258C34.2645 30.3769 35.2477 30.2451 36.1285 29.8475C37.0093 29.45 37.7473 28.8048 38.247 27.9955H32.4327V24.4216H43.5381C43.5513 24.6189 43.5579 24.8175 43.5579 25.0172Z"
+                                    fill="#C9CFCC" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2412_109">
+                                    <rect width="61" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="footer__top-contact">
+                        <div class="contact__phone">
+                            <div class="contact__phone-text">
+                                Контактный телефон
+                            </div>
+                            <div class="contact__phone-top">
+                                + 7 (812) 309-09-34
+                            </div>
+                            <div class="contact__phone-bottom">
+                                + 7 (965) 084-29-09
+                            </div>
+                        </div>
+                        <div class="contact__email">
+                            <div class="contact__email-text">
+                                Электронная почта
+                            </div>
+                            <div class="contact__email-top">
+                                tustin78@mail.ru
+                            </div>
+                            <div class="contact__email-bottom">
+                                info@tustin.ru
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top-right">
+                    <div class="footer__top-title">
+                        Остались вопросы?
+                    </div>
+                    <div class="footer__top-text">
+                        Узнавайте первым о скидках, предложениях и событиях еженедельно в <br> своем почтовом ящике.
+                        Отпишитесь в любое время одним щелчком мыши.
+                    </div>
+                    <div class="footer__send">
+                        <form action="#">
+                            <input class="send" type="text" placeholder="Введите свою почту">
+                            <button class="btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <div class="bottom__text">
+                        <div class="">Главная</div>
+                        <div class="">О компании</div>
+                        <div class="">Каталог</div>
+                    </div>
+                    <div class="footer__bottom-bottom">
+                        <div class="bottom__icons">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2469_1516)">
+                                    <path
+                                        d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+                                    <path
+                                        d="M15 22H9C4 22 2 20 2 15V9C2 4 4 2 9 2H15C20 2 22 4 22 9V15C22 20 20 22 15 22Z"
+                                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2469_1516">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2469_1524)">
+                                    <path
+                                        d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M11.4001 9.49981L13.9001 10.9998C14.8001 11.5998 14.8001 12.4998 13.9001 13.0998L11.4001 14.5998C10.4001 15.1998 9.6001 14.6998 9.6001 13.5998V10.5998C9.6001 9.29981 10.4001 8.89981 11.4001 9.49981Z"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2469_1524">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2469_1532)">
+                                    <path
+                                        d="M6.9 20.6C8.4 21.5 10.2 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 13.8 2.5 15.5 3.3 17L2.44044 20.306C2.24572 21.0549 2.93892 21.7317 3.68299 21.5191L6.9 20.6Z"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.5 14.8485C16.5 15.0105 16.4639 15.177 16.3873 15.339C16.3107 15.501 16.2116 15.654 16.0809 15.798C15.86 16.041 15.6167 16.2165 15.3418 16.329C15.0714 16.4415 14.7784 16.5 14.4629 16.5C14.0033 16.5 13.512 16.392 12.9937 16.1715C12.4755 15.951 11.9572 15.654 11.4434 15.2805C10.9251 14.9025 10.4339 14.484 9.9652 14.0205C9.501 13.5525 9.08187 13.062 8.70781 12.549C8.33826 12.036 8.04081 11.523 7.82449 11.0145C7.60816 10.5015 7.5 10.011 7.5 9.543C7.5 9.237 7.55408 8.9445 7.66224 8.6745C7.77041 8.4 7.94166 8.148 8.18052 7.923C8.46895 7.6395 8.78443 7.5 9.11793 7.5C9.24412 7.5 9.37031 7.527 9.48297 7.581C9.60015 7.635 9.70381 7.716 9.78493 7.833L10.8305 9.3045C10.9116 9.417 10.9702 9.5205 11.0108 9.6195C11.0513 9.714 11.0739 9.8085 11.0739 9.894C11.0739 10.002 11.0423 10.11 10.9792 10.2135C10.9206 10.317 10.835 10.425 10.7268 10.533L10.3843 10.8885C10.3348 10.938 10.3122 10.9965 10.3122 11.0685C10.3122 11.1045 10.3167 11.136 10.3257 11.172C10.3393 11.208 10.3528 11.235 10.3618 11.262C10.4429 11.4105 10.5826 11.604 10.7809 11.838C10.9837 12.072 11.2 12.3105 11.4344 12.549C11.6778 12.7875 11.9121 13.008 12.151 13.2105C12.3853 13.4085 12.5791 13.5435 12.7323 13.6245C12.7549 13.6335 12.7819 13.647 12.8135 13.6605C12.8495 13.674 12.8856 13.6785 12.9261 13.6785C13.0028 13.6785 13.0613 13.6515 13.1109 13.602L13.4534 13.2645C13.5661 13.152 13.6743 13.0665 13.7779 13.0125C13.8816 12.9495 13.9852 12.918 14.0979 12.918C14.1835 12.918 14.2737 12.936 14.3728 12.9765C14.472 13.017 14.5756 13.0755 14.6883 13.152L16.18 14.2095C16.2972 14.2905 16.3783 14.385 16.4279 14.4975C16.473 14.61 16.5 14.7225 16.5 14.8485Z"
+                                        stroke="white" stroke-miterlimit="10" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2469_1532">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="footer__copy">
+                            &#169 2021-2022, EDE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
